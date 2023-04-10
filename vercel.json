@@ -1,0 +1,15 @@
+{
+    "name": "my-project",
+    "builds": [
+      { "src": "index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/(.*)", "dest": "api/$1" },
+      { "src": "/(.*)", "dest": "index.html" }
+    ],
+    "alias": [
+      "my-project.vercel.app",
+      "www.my-project.com"
+    ]
+  }
+  
